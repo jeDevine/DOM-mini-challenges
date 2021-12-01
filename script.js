@@ -56,7 +56,7 @@
                 penny.style.display = "block";
                 penny.style.width = "fit-content";
                 penny.style.height = "fit-content";
-                penny.style.backgroundColor = "brown";
+                penny.style.backgroundColor = "rgb(145, 70, 0)";
                 penny.style.borderRadius = "50px";
                 penny.style.padding = "10px";
                 penny.style.paddingInline = "15px";
