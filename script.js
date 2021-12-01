@@ -8,6 +8,7 @@
     let fruitGummies = document.querySelector("#fruit-gummies");
     let sum = 0;
 
+
     const addLimeCola = (event) => {
         sum += 2.00;
         total.innerText = `Total: $${sum}`;
@@ -43,12 +44,18 @@
     let coinBox = document.querySelector("#coinBox");
     let theCoin = document.querySelector("#coinChoice");
     let numCoins = document.querySelector("#numCoins");
-
+    let currency = document.querySelector("#currency")
+    let coinSum = 0;
+    currency.innerText = `Total: $${coinSum}`;
 
     moneys.addEventListener("submit", (event) => {
         event.preventDefault();
         if (theCoin.value === "Penny") {
             for (let i = 0; i < numCoins.value; i++) {
+                // const penny = document.createElement("img");
+                // penny.setAttribute("src", "https://www.usmint.gov/wordpress/wp-content/uploads/2020/12/2021-lincoln-penny-uncirculated-obverse-philadelphia-768x768.jpg")
+                // penny.style.width = "50px";
+                // penny.style.height = "50px";
                 const penny = document.createElement("div");
                 const pennyText = document.createElement("p");
                 pennyText.innerText = "Penny";
@@ -60,7 +67,9 @@
                 penny.style.borderRadius = "50px";
                 penny.style.padding = "10px";
                 penny.style.paddingInline = "15px";
-                
+                coinSum += 0.01;
+                let n = coinSum.toFixed(2);
+                currency.innerText = `Total: $${n}`;
                 coinBox.appendChild(penny);
             }        
         }
@@ -77,6 +86,9 @@
                 nickel.style.borderRadius = "50px";
                 nickel.style.padding = "15px";
                 nickel.style.paddingInline = "23px";
+                coinSum += 0.05;
+                let n = coinSum.toFixed(2);
+                currency.innerText = `Total: $${n}`;
                 
                 coinBox.appendChild(nickel);
             }        
@@ -94,7 +106,9 @@
                 dime.style.borderRadius = "50px";
                 dime.style.padding = "5px";
                 dime.style.paddingInline = "15px";
-                
+                coinSum += 0.10;
+                let n = coinSum.toFixed(2);
+                currency.innerText = `Total: $${n}`;                
                 coinBox.appendChild(dime);
             }        
         }
@@ -111,6 +125,9 @@
                 quarter.style.borderRadius = "75px";
                 quarter.style.padding = "30px";
                 quarter.style.paddingInline = "35px";
+                coinSum += 0.25;
+                let n = coinSum.toFixed(2);
+                currency.innerText = `Total: $${n}`;
                 coinBox.appendChild(quarter);
             }        
         }
