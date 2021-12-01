@@ -111,7 +111,6 @@
                 quarter.style.borderRadius = "75px";
                 quarter.style.padding = "30px";
                 quarter.style.paddingInline = "35px";
-                
                 coinBox.appendChild(quarter);
             }        
         }
