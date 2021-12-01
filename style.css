@@ -1,0 +1,22 @@
+#lightBulb{
+    /* background-color: rgb(61, 56, 56); */
+    width: fit-content;
+    padding: 1em;
+}
+
+.on {
+    background-color: lightgrey;
+}
+
+.off {
+    background-color: rgb(61, 56, 56);
+}
+
+#coinBox {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: teal;
+    height: 20vh;
+    width: 100vw;
+    padding: 10px;
+}

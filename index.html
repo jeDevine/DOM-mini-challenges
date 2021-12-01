@@ -5,18 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Mini Challenges</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="vendingMachine">
     <p id="total"></p>
-    <button class="button" id="lime-cola">LIME COLA<br>$2.00</br></button>
-
-    <button class="button" id="salted-peanuts">SALTED PEANUTS<br>$3.00</br></button>
-
-    <button class="button" id="chocolate-bar">CHOCOLATE BAR<br>$4.00</br></button>
-
-    <button class="button" id="fruit-gummies">FRUIT GUMMIES<br>$6.00</br></button>
-    
-
+        <button class="button" id="lime-cola">LIME COLA<br>$2.00</br></button>
+        <button class="button" id="salted-peanuts">SALTED PEANUTS<br>$3.00</br></button>
+        <button class="button" id="chocolate-bar">CHOCOLATE BAR<br>$4.00</br></button>
+        <button class="button" id="fruit-gummies">FRUIT GUMMIES<br>$6.00</br></button>
+    </div>
+    <div id="makeMoney">
+        <form action="" id="moneyForm">
+            <label for="numCoins">How many?<input type="number" name="count" id="numCoins" placeholder=0></input></label>
+            <label for="coinChoice">Which coins?
+                <select name="coins" id="coinChoice">
+                    <option>Penny</option>
+                    <option>Nickel</option>
+                    <option>Dime</option>
+                    <option>Quarter</option>
+                </select>
+            </label>
+            <button type="submit">Make Money!</button>
+        </form>
+        <div id="coinBox">
+           
+        </div>
+    </div>
+    <div id="lightBulbDiv">
+        <p class="off" id="lightBulb">Light Bulb</p>
+        <button class="buttons" id="onButton">On</button>
+        <button class="buttons" id="offButton">Off</button>
+        <button class="buttons" id="toggleButton">Toggle</button>
+        <button class="buttons" id="endButton">End</button>
+    </div>
 
     <script src="script.js"></script>
 </body>
